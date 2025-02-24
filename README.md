@@ -1,0 +1,1 @@
+**This code has been created to implement the Maze Solver in Python. It is used to solve mazes of different sizes from 5x5 to 15x15. It uses three different search algorithms and two different MDP algorithms**
