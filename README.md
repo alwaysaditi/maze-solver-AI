@@ -17,6 +17,8 @@ as a part of CS7IS2 (Artificial Intelligence) Module for the MSc in Computer Sci
 3. This code has been compiled and run and tested in python 3.7.0
 4. To install further requirements of modules, navigate to the Maze_solver folder and install the requirements by pip install -r requirements.txt
 5. It is necessary to install these requirements because the code displays the final path using a Graphical User Interface and not having those installed could lead to an error
-6. Finally, the main function can be run using python main.py. Once that has been done, the user is asked for a choice of algorithm to run. (Note, any algorithm is run by default on 10 mazes from sizes 5 to 15, for value and policy iteration, the user needs to manually close each window once the path has been shown on the GUI).
+6. Finally, the main function can be run using python main.py. Once that has been done, the user is asked for a choice of algorithm to run. Please enter the number corresponding to the choice of algorithm you wish to run.
+
+    (Note, any algorithm is run by default on 10 mazes from sizes 5 to 15, for value and policy iteration, the user needs to manually close each window once the path has been shown on the GUI).
 
 
