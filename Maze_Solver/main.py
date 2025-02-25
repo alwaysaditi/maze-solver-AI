@@ -21,37 +21,51 @@ seed = 42  # Any number can be used as a seed
 sizes = range(5, 16)  # Maze sizes from 5x5 to 15x15
 
 choice = int(input("Enter the choice of algorithm to execute. \n 0 for BFS \n 1 for DFS \n 2 for Astar\n 3 for Value Iteration \n 4 for Policy Iteration"))
-for size in sizes:
-    maze_generator = MazeGenerator(size,size, seed=seed)  # Generate a maze of any size with the seed
-    maze = maze_generator.generate_maze()
 
-    # Step 2: Solve the maze using BFS, DFS, or A*
-    solver = MazeSolver(maze)
-    if choice ==0:
+if choice ==0:
+    for size in sizes:
+        maze_generator = MazeGenerator(size,size, seed=seed)  # Generate a maze of any size with the seed
+        maze = maze_generator.generate_maze()
+
+        # Step 2: Solve the maze using BFS, DFS, or A*
+        solver = MazeSolver(maze)
         solver_steps = solver.bfs() 
         gui = MazeGUI(maze, solver_steps)
         gui.run() 
-        break
-    elif choice ==1:
+    
+elif choice ==1:
+    for size in sizes:
+        maze_generator = MazeGenerator(size,size, seed=seed)  # Generate a maze of any size with the seed
+        maze = maze_generator.generate_maze()
+
+        # Step 2: Solve the maze using BFS, DFS, or A*
+        solver = MazeSolver(maze)
         solver_steps = solver.dfs()
         gui = MazeGUI(maze, solver_steps)
         gui.run()
-        break
-    elif choice ==2:
+    
+elif choice ==2:
+    for size in sizes:
+        maze_generator = MazeGenerator(size,size, seed=seed)  # Generate a maze of any size with the seed
+        maze = maze_generator.generate_maze()
+
+        # Step 2: Solve the maze using BFS, DFS, or A*
+        solver = MazeSolver(maze)
         solver_steps = solver.a_star()
         gui = MazeGUI(maze, solver_steps)
         gui.run()
-        break
-    elif choice == 3:
-        measure_performance_value()
-        break 
         
-    elif choice == 4:
-        measure_performance_policy()
-        break 
-       
-   
+elif choice == 3:
+    measure_performance_value()
     
+    
+elif choice == 4:
+    measure_performance_policy()
+     
+    
+
+    
+    # Step 3: Display the step-by-step solution in the GUI
     
 
 
