@@ -52,7 +52,6 @@ for size in sizes:
        
    
     
-    # Step 3: Display the step-by-step solution in the GUI
     
 
 
